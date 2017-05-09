@@ -1,4 +1,7 @@
 
+# RemoveRegionLogo
+# version 1.2
+
 # 主要用于掩盖不透明的logo。
 # 原理是取logo区域矩形边界的图像向logo区域中心进行延伸填充，以掩盖logo区域
 
@@ -14,6 +17,7 @@
 # fade, fade_in, fade_out 用于产生渐入渐出的效果。
 #               以添加的渐变帧数计数，请确保logo出现的之前和之后有足够的帧进行渐变。
 #               默认fade_in=fade=0，fade_out=fade=0
+# ignore_top, ignore_bottom, ignore_left, ignore_right 取样本时忽略顶边/底边/左边/右边。
 # soft_edges 是否软化边缘。
 #               若要启用该项，logo区域的坐标应向外扩大约8像素以保证logo被安全覆盖。
 
@@ -57,14 +61,14 @@ empty = BlankClip(src, color=$ffffff, pixel_type="RGB32")
 
 
 top    = ignore_top ? empty : logo_src.Crop(x,y,width,bit)
-bottom = ignore_bottom ? empty : logo_src.Crop(x,y+height,width,bit)
+bottom = ignore_bottom ? empty : logo_src.Crop(x,y+height-bit,width,bit)
 piece1 = ignore_top&&ignore_bottom ? empty \
     : ignore_top==false&&ignore_bottom==false ? StackVertical(top, bottom) \
     : ignore_top ? bottom \
     : top
 
 left   = ignore_left ? empty : logo_src.Crop(x,y,bit,height)
-right  = ignore_right ? empty : logo_src.Crop(x+width,y,bit,height)
+right  = ignore_right ? empty : logo_src.Crop(x+width-bit,y,bit,height)
 piece2 = ignore_left&&ignore_right ? empty \
     : ignore_left==false&&ignore_right==false ? StackHorizontal(left,right) \
     : ignore_left ? right \
