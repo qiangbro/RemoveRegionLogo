@@ -1,0 +1,2 @@
+# RemoveRegionLogo
+用于掩盖不透明的logo的avisynth函数
