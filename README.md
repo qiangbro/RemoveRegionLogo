@@ -27,3 +27,17 @@
  author：mikey
  qhzq88@gmail.com
  所在团队：有村花纯字幕组
+
+
+# 用例
+sample1
+
+<img src="https://cloud.githubusercontent.com/assets/4646469/25834226/0b9afd18-34a9-11e7-87b1-8f5c29a17452.jpg" alt="" width="400"/><img src="https://cloud.githubusercontent.com/assets/4646469/25834232/11cc89cc-34a9-11e7-9550-34db8d44ef8a.jpg" alt="" width="400"/>
+
+sample2
+
+<img src="https://cloud.githubusercontent.com/assets/4646469/25834254/21befbc6-34a9-11e7-9ecc-73abb593986a.jpg" alt="" width="400"/><img src="https://cloud.githubusercontent.com/assets/4646469/25834233/11fea3e4-34a9-11e7-97a6-bc5db3a25472.jpg" alt="" width="400"/>
+
+sample2
+
+<img src="https://cloud.githubusercontent.com/assets/4646469/25834255/24ad1b60-34a9-11e7-83d2-e741ab380d9f.jpg" alt="" width="400"/><img src="https://cloud.githubusercontent.com/assets/4646469/25834234/12245bca-34a9-11e7-96c7-d524a3bacfc0.jpg" alt="" width="400"/>
