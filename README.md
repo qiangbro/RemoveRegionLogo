@@ -19,7 +19,9 @@
  fade, fade_in, fade_out 用于产生渐入渐出的效果。
                以添加的渐变帧数计数，请确保logo出现的之前和之后有足够的帧进行渐变。
                默认fade_in=fade=0，fade_out=fade=0
-               
+
+ ignore_top, ignore_bottom, ignore_left, ignore_right 取样本时忽略顶边/底边/左边/右边。
+ 
  soft_edges 是否软化边缘。
                若要启用该项，logo区域的坐标应向外扩大约8像素以保证logo被安全覆盖。
 
